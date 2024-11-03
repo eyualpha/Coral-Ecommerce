@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --primary-color:  #FF6F61;
+    --secondary-color: #1E2832;
+
+    /* opacity-5% */
+    --bg-color: #1e283214; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+span{
+    font-weight: bold;
+}
+
+header{
+    padding: 0 10%;
+    background-color: var(--bg-color);
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.left-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.left-item:hover{
+    color: var(--primary-color);
+    transition: .2s;
+    cursor: pointer;
+}
+nav h1{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header-tags{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.header-tags p:hover{
+    color: var(--primary-color);
+    transition: .2s;
+    cursor: default;
+}
+header .hero{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+.hero .intro{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero h1{
+    font-size: 120px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.hero h2{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+.hero .shop-btn{
+    display: flex;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+.hero .shop-btn:hover{
+    background-color: var(--primary-color);
+    transition: .2s;
+}
+.hero .image{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.hero img{
+    margin: 20px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+header p{
+    font-size: 20px;
+}
+#companies{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-bottom: 4rem;
+}
+#companies .container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* show */
+#show{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-height: 70vh;
+    padding-bottom: 30px;
+}
+#show .container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.container .left-show{
+    width: 50%;
+}
+.container .right-show{
+    width: 50%;
+    height: 100%;
+    gap: 1rem;
+}
+#show .left-show img{
+    width: 90%;
+}
+#show .right-show img{
+    width: 50%;
+}
+#show .right-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+#show .right-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+#show .show-text{
+    transform: rotate(180deg);
+    writing-mode:vertical-lr;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+#products{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+}
+#products .container, #sellers .container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#products .products-nav, #sellers .products-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.products-nav .left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.products-nav .right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+}
+.products-nav .right:hover{
+    background-color: var(--primary-color);
+    transition: .2s;
+}
+.container .products-nav p{
+    font-size: 22px;
+}
+#products h1, #sellers h1{
+    font-size: 50px;
+    margin: 20px 0;
+}
+.image-cards{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+}
+.image-cards img{
+    width: 100%;
+}
+.card .pricing{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.card p{
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+
+#zara{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: url('/Images/img/andrey-zvyagintsev-EQj1ZMpq_VM-unsplash\ 1.png') no-repeat center center/cover; 
+}
+.container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: end;
+    color: whilte;
+}
+#zara .zara-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#zara p{
+    color: white;
+    font-size: 28px;
+    line-height: 2;
+    margin: 50px 0;
+}
+#zara .zara-btn p{
+    color: var(--secondary-color);
+    background-color: white;
+    padding: 10px 20px;
+}
+#zara .zara-btn p:hover{
+    background-color: var(--primary-color);
+    transition: .2s;
+}
+#sellers{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
