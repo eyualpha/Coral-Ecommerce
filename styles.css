@@ -293,3 +293,39 @@ header p{
     align-items: center;
     height: 80vh;
 }
+
+#discount{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: var(--bg-color);
+}
+#discount .container{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#discount .discount-images{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#discount .discount-images img{
+    width: 15%;
+}
+#discount h1{
+    font-size: 50px;
+    margin: 70px 0;
+}
+#dicount input{
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+}
